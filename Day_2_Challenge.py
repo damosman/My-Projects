@@ -25,24 +25,70 @@
 # •	Extract all the numbers and print to the terminal
 # Note: Make sure you write a pseudocode to capture your thought process before writing any line of code. The pseudocode is also part of the assignment. If any question(s), ask your co-students and if still unresolved, you can ask me.
 
-print("Welcome to this Challenge")
-q_1 = input("Would You have stayed? ")
-q_2 = input("How long have you stayed there? ")
-q_3 = input("We have the whole week off: ")
-q_4 = input("How long did you live in Scotland? ")
-q_5 = input("What should the men have done? ")
-q_6 = input("We have the whole week off: ")
-q_7 = input("How old is your step-mum? ")
-q_8 = input("Can I use your help? ")
-q_9 = input("We have the whole week off: ")
-q_10 = input("How can I change my behaviour? ")
-q_11 = input("How many years is a century? ")
-q_12 = input("We have the whole week off: ")
-q_13 = input("Hope you enjoyed the meal? ")
-q_14 = input("We have the whole week off: ")
-q_15 = input("What is 50 multiplied by 2? ")
-q_16 = input("What is 8 multiplied by 100? ")
-q_17 = input("What is 9 multiplied by 100? ")
-q_18 = input("Can we go with this option now? ")
 
-import
+string1 = ("21")
+string2 = ("Happy Easter Holidays")
+string3 = ("40")
+string4 = ("All the men here are just not understanding the situation")
+string5 = ("Happy Easter Holidays")
+string6 = ("50")
+string7 = ("In what ways can I help you")
+string8 = ("Happy Easter Holidays")
+string9 = ("You better learn how to be polite")
+string10 = ("100")
+string11 = ("Happy Easter Holidays")
+string12 = ("OMG that food is looking really great")
+string13 = ("Happy Easter Holidays")
+string14 = ("100")
+string15 = ("800")
+string16 = ("900")
+string17 = ("Well, let us try to think about that in another way")
+
+print(len(string17))
+
+# the 5 repeated phrase
+
+slice1 = slice(0, 21)
+slice2 = slice(0, 21)
+slice3 = slice(0, 21)
+slice4 = slice(0, 21)
+slice5 = slice(0, 21,)
+
+# print statement for 5 repeated phrase
+print(string2[slice1])
+print(string5[slice2])
+print(string8[slice3])
+print(string11[slice4])
+print(string13[slice5])
+
+# the non-repeated phrase and print to the terminal
+slice6 = slice(0, 57)
+slice7 = slice(0, 27)
+slice8 = slice(0, 33)
+slice9 = slice(0, 37)
+slice10 = slice(0, 51)
+
+# print statement for the non-repeated phrase and print to the terminal
+print(string4[slice6])
+print(string7[slice7])
+print(string9[slice8])
+print(string12[slice9])
+print(string17[slice10])
+
+# all the numbers
+slice11 = slice(2)
+slice12 = slice(2)
+slice13 = slice(3)
+slice14 = slice(3)
+slice15 = slice(3)
+slice16 = slice(3)
+slice17 = slice(3)
+
+# print all the numbers
+print(string1[slice6])
+print(string3[slice7])
+print(string6[slice8])
+print(string10[slice9])
+print(string14[slice10])
+print(string15[slice10])
+print(string16[slice10])
