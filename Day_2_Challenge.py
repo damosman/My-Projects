@@ -43,7 +43,6 @@ string14 = ("100")
 string15 = ("800")
 string16 = ("900")
 string17 = ("Well, let us try to think about that in another way")
-import math
 
 # print(len(string1))
 
