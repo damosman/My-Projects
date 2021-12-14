@@ -23,7 +23,6 @@ try:
         print("It's a cold day")
     else:
         print("It's neither hot nor cold")
-
 except NameError:
     print("The input is invalid, please check and try again")
 except ValueError:
