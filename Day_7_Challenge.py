@@ -1,6 +1,6 @@
 # Write a function in Python that calculates the addition, subtraction, division and multiplication of any 4 numbers that you enter
 
-# The __future__ method is to avoid the ZeroDivisionError incase the user enters zero as input
+# The __future__ method is to avoid the ZeroDivisionError in case the user enters zero as input
 from __future__ import division
 # The function will print out the following
 
