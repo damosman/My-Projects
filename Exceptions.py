@@ -38,8 +38,8 @@ try:
         checkIn_time = booking_time - checkin_start_time
         if checkIn_time <= checkin_start_time:
             checkIn_time += 24
-        checkIn_time = str(checkIn_time) + ':' + '00' + ':' + '00'
-        print("\n" "Thank You for booking with DamAirlines, Your booking date is", booking_date, "and your booking number is", booking_code,  '\n' "Your check-in time is from", checkIn_time,"."
+        checkIn_time = str(checkIn_time) + ':' + '00' + ':' + '00.'
+        print("\n" "Thank You for booking with DamAirlines, Your booking date is", booking_date, "and your booking number is", booking_code,"."  '\n' "Your check-in time is from", checkIn_time,
               "Kindly check your email for booking confirmation.")
     else:
         print("Please Enter a valid date and time")
