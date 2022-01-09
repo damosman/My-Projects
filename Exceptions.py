@@ -42,7 +42,7 @@ try:
         print("\n" "Thank You for booking with DamAirlines, Your booking date is", booking_date, "and your booking number is", booking_code,"."  '\n' "Your check-in time is from", checkIn_time,
               "Kindly check your email for booking confirmation.")
     else:
-        print("Please Enter a valid date and time")
+        print("Error! Past date cannot be entered")
 
 except( TypeError, ValueError, NameError):
     print("Please Enter a valid date")
