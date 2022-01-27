@@ -1,4 +1,5 @@
 # Calculator
+from CalArt import logo
 
 # Add
 def add(n1,n2):
@@ -23,24 +24,24 @@ operators = {
   "/": divide
 }
 
-num1 = int(input("What's the first number?: "))
+def calculator():
+  print(logo)
 
-for symbol in operators:
-  print(symbol)
-first_operator_symbol = input("Pick an operation from the line above: ")
+  num1 = float(input("What's the first number?: "))
+  for symbol in operators:
+    print(symbol)
+  should_continue = True
 
-num2 = int(input("What's the second number?: "))
+  while should_continue:
+    first_operator_symbol = input("Pick an operator from the line above: ")
+    num2 = int(input("What's the next number?: "))
+    calculation_function = operators[first_operator_symbol]
+    first_answer = calculation_function(num1, num2)
 
-calculation_function = operators[first_operator_symbol]
-first_answer = calculation_function(num1, num2)
+    print(f"{num1} {first_operator_symbol} {num2} = {first_answer}")
 
-print(f"{num1} {first_operator_symbol} {num2} = {first_answer}")
-
-second_operator_symbol = input("Pick another operator: ")
-num3 = int(input("What's the third number?: "))
-
-calculation_function = operators[second_operator_symbol]
-
-second_answer = calculation_function(first_answer, num3)
-
-print(f"{first_answer} {second_operator_symbol} {num3} = {second_answer}")
+    if input(f"Type 'y' to continue calculating with {first_answer}, or type 'n' to start a new calculation: ") == 'y':
+      num1 = first_answer
+    else:
+      should_continue = False
+calculator()
